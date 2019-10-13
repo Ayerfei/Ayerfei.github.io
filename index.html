@@ -151,7 +151,15 @@
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          
+          description：
+Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+An input string is valid if:
+ Open brackets must be closed by the same type of brackets. Open brackets must be closed in the correct order.  Note that an empty string is also considered valid.
+算法：
+一、依次扫描括号序列
+ 若是左括号，则入栈； 若是右括号，则检查栈，栈空则右括号多余，栈不为空则匹配结果；  二、 读完所有括号时，检查栈，若栈空则正确匹配。
+使用Python进行解题的好处：
+ list自带栈特性，使用append()和pop()方法实现“后进先出”； 当s为空时不进入循环，不用提前判断是否为空，节省判断时间。  solution：
         </div>
           <a href="/posts/valid-parentheses/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
         
