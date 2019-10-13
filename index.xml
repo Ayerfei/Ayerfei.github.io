@@ -41,15 +41,6 @@ hugo server -D
     </item>
     
     <item>
-      <title>Hugo Quick Start</title>
-      <link>http://Ayerfei.github.io/posts/hugo-quick-start/</link>
-      <pubDate>Sun, 13 Oct 2019 08:54:58 +0800</pubDate>
-      
-      <guid>http://Ayerfei.github.io/posts/hugo-quick-start/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Valid Parentheses</title>
       <link>http://Ayerfei.github.io/posts/valid-parentheses/</link>
       <pubDate>Sat, 12 Oct 2019 22:29:56 +0800</pubDate>
