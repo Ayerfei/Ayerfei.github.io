@@ -161,7 +161,7 @@ An input string is valid if:
 
 <p><strong>solution：</strong></p>
 
-<p><code>def isValid(self, s: str) -&gt; bool:
+<pre><code class="language-Python">def isValid(self, s: str) -&gt; bool:
         key = {'(':')', '[':']', '{':'}'}
         left = ['(','[','{']
         stack = []
@@ -175,7 +175,8 @@ An input string is valid if:
                     return False
         if stack != []:
             return False
-        return True</code></p>
+        return True
+</code></pre>
 <ul class="pa0">
   
 </ul>

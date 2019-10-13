@@ -6,10 +6,39 @@
     <description>Recent content on Ayerfei&#39;s Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Oct 2019 08:54:58 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 13 Oct 2019 09:25:24 +0800</lastBuildDate>
     
 	<atom:link href="http://Ayerfei.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>将hugo部署到Github Pages</title>
+      <link>http://Ayerfei.github.io/posts/%E5%B0%86hugo%E9%83%A8%E7%BD%B2%E5%88%B0github-pages/</link>
+      <pubDate>Sun, 13 Oct 2019 09:25:24 +0800</pubDate>
+      
+      <guid>http://Ayerfei.github.io/posts/%E5%B0%86hugo%E9%83%A8%E7%BD%B2%E5%88%B0github-pages/</guid>
+      <description>以下以 win 10 为例
+ 下载hugo和配置环境变量  https://github.com/gohugoio/hugo/releases
+从以上网址找出属于自己的电脑版本的zip解压
+解压后的目录如下：
+新建bin目录，将hugo.exe移到bin目录下
+配置环境变量，打开“此电脑 -&amp;gt; 右键点击‘属性’ -&amp;gt; 高级系统设置 -&amp;gt; 环境变量 -&amp;gt; 编辑系统变量Path”
+将hugo.exe 所在目录添加进Path，如我的电脑则添加“D:\Hugo\bin”
+ 下载git和配置环境变量  下载git参考：https://blog.csdn.net/qq_32786873/article/details/80570783
+配置环境变量参考：https://blog.csdn.net/EXLsunshine/article/details/18939329
+ 配置个人博客  进入hugo所在文件夹，空白处右键点击Git Bash Here
+（1）新建网址：
+hugo new site 网址名
+（2）添加博客主题，这里以ananke为例：
+cd 网址名 git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml  git init
+（3）添加博客内容
+hugo new posts/my-first-post.md
+这一步要注意此时生成的文件是作为草稿的，不会出现子啊配置成功的Github Pages，需要打开编辑为&amp;rdquo;draft: false&amp;rdquo;
+（4）启动服务器
+hugo server -D
+在浏览器打开：http://localhost:1313/
+ 部署到Github Pages  在github上新建repository，命名为 .</description>
+    </item>
     
     <item>
       <title>Hugo Quick Start</title>
