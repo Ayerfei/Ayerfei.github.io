@@ -1,110 +1,66 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
-    <title>Ayerfei&#39;s Personal Blog  | 将hugo部署到Github Pages</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.58.3" />
-    
-    
-      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-    
 
-    
-    
-      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
-    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+将hugo部署到Github Pages
+</title>
 
-    
-
-    
-      
-    
-
-    
-    
-    <meta property="og:title" content="将hugo部署到Github Pages" />
-<meta property="og:description" content="一步步部署防出错重来" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://Ayerfei.github.io/posts/%E5%B0%86hugo%E9%83%A8%E7%BD%B2%E5%88%B0github-pages/" />
-<meta property="article:published_time" content="2019-10-13T09:25:24+08:00" />
-<meta property="article:modified_time" content="2019-10-13T09:25:24+08:00" />
-<meta itemprop="name" content="将hugo部署到Github Pages">
-<meta itemprop="description" content="一步步部署防出错重来">
-
-
-<meta itemprop="datePublished" content="2019-10-13T09:25:24&#43;08:00" />
-<meta itemprop="dateModified" content="2019-10-13T09:25:24&#43;08:00" />
-<meta itemprop="wordCount" content="153">
-
-
-
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="将hugo部署到Github Pages"/>
-<meta name="twitter:description" content="一步步部署防出错重来"/>
-
-  </head>
-
-  <body class="ma0 avenir bg-near-white">
-
-    
-   
   
+  
+  <meta name="author" content="" />
+  <meta name="description" content="" />
 
-  <header>
-    <div class="bg-black">
-      <nav class="pv3 ph3 ph4-ns" role="navigation">
-  <div class="flex-l justify-between items-center center">
-    <a href="http://Ayerfei.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
-      Ayerfei&#39;s Personal Blog
+
+
+
+
+<meta name="generator" content="Hugo 0.58.3" />
+
+
+<link rel="canonical" href="http://Ayerfei.github.io/posts/%E5%B0%86hugo%E9%83%A8%E7%BD%B2%E5%88%B0github-pages/" />
+<link rel="alternative" href="/index.xml" title="Ayerfei&#39;s Personal Blog" type="application/atom+xml" />
+
+<link href="/css/semantic.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="/css/site.css" />
+<link rel="stylesheet" href="/css/github-markdown.css" />
+
+
+</head>
+
+<body>
+  <div class="flip-container">
+    <div class="flipper">
+      <section class="front">
+        
+<nav class="ui top secondary menu">
+  <div class="item">
+    <i class="inverted big link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+  </div>
+  <div class="item">
+    <a href="/">
+      <i class="inverted big link home icon" title="Home"></i>
     </a>
-    <div class="flex-l items-center">
-      
-
-      
-      
-
-
-
-
-
-
-
-
-
-
-
-    </div>
   </div>
 </nav>
+ 
+<div class="ui centered grid">
+  <div class="fifteen wide mobile fifteen wide tablet eleven wide computer column post-list post-single-main">
 
-    </div>
-  </header>
-
-
-
-    <main class="pb7" role="main">
-      
-  
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
-
-    <header class="mt4 w-100">
-      <p class="f6 b helvetica tracked">
-          
-        POSTS
-      </p>
-      <h1 class="f1 athelas mb1">将hugo部署到Github Pages</h1>
-      
-      
-      <time class="f6 mv4 dib tracked" datetime="2019-10-13T09:25:24&#43;08:00">October 13, 2019</time>
-      
-      
-    </header>
-
-    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>以下以 win 10 为例</p>
+    <section class="ui top attached segment">
+      <a class="ui black right corner label" href="javascript:void(0)" onclick="savePostAsImg()">
+        <i class="save icon"></i>
+      </a>
+      <header>
+        <h1 class="ui header">
+          将hugo部署到Github Pages
+          <div class="sub header">@  · Oct 13, 2019 · 1 min read · Update at Oct 13, 2019</div>
+        </h1>
+      </header>
+      <article class="markdown-body" style="margin-top: 2rem; font-size: 1.4rem;"><p>以下以 win 10 为例</p>
 
 <ol>
 <li>下载hugo和配置环境变量</li>
@@ -140,7 +96,8 @@
 
 <p>（1）新建网址：</p>
 
-<p><code>hugo new site 网址名</code></p>
+<pre><code class="language-Git">hugo new site 网址名
+</code></pre>
 
 <p>（2）添加博客主题，这里以ananke为例：</p>
 
@@ -153,17 +110,17 @@ git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/anan
 echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml
 </code></pre>
 
-<p><code>git init</code></p>
-
 <p>（3）添加博客内容</p>
 
-<p><code>hugo new posts/my-first-post.md</code></p>
+<pre><code class="language-Git">hugo new posts/my-first-post.md
+</code></pre>
 
 <p>这一步要注意此时生成的文件是作为草稿的，不会出现子啊配置成功的Github Pages，需要打开编辑为&rdquo;draft: false&rdquo;</p>
 
 <p>（4）启动服务器</p>
 
-<p><code>hugo server -D</code></p>
+<pre><code class="language-Git">hugo server -D
+</code></pre>
 
 <p>在浏览器打开：<a href="http://localhost:1313/">http://localhost:1313/</a></p>
 
@@ -214,60 +171,146 @@ cd ../
 
 <p>在个人博客主目录下Git Bash：</p>
 
-<p><code>chmod +x deploy.sh</code></p>
+<pre><code class="language-Git">chmod +x deploy.sh
+</code></pre>
 
 <p>之后每次新建文章</p>
 
-<p><code>hugo new posts/hugo-start.md</code></p>
+<pre><code class="language-Git">hugo new posts/hugo-start.md
+</code></pre>
 
 <p>将hugo-start.md中的“draft： true”改为“draft： false”，继续：</p>
 
 <pre><code class="language-Git">hugo
 ./deploy.sh
 </code></pre>
-<ul class="pa0">
-  
-</ul>
-<div class="mt6">
-      
-      
-      </div>
+</article>
     </section>
 
-    <aside class="w-30-l mt6-l">
-
-
-
-
-</aside>
-
-  </article>
-
-    </main>
-    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
-  <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://Ayerfei.github.io/" >
-    &copy; 2019 Ayerfei&#39;s Personal Blog
-  </a>
-    <div>
-
-
-
-
-
-
-
-
-
-
-</div>
-  </div>
-</footer>
+    <footer class="ui attached segment dream-tags">
+      
+      <span>No Tags</span>
+      
+    </footer>
 
     
 
-  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+    
+
+  </div>
+  <div class="fifteen wide mobile fifteen wide tablet four wide computer column">
+
+    
+<section class="ui top attached center aligned inverted segment">
+
+  <a id="tag-category-pop" class="ui right ribbon label" style="width: 1px;">
+    <i class="bars icon" title="Show menu"></i>
+  </a>
+
+  <div class="ui small circular image" style="margin-top: 1rem;">
+    
+    <img src="/img/avatar-ex.svg">
+    
+  </div>
+  
+  <h3 class="ui inverted header">
+  &#39;s blog<div class="sub header"></div>
+  </h3>
+
+  
+  <div class="ui inverted horizontal list">
+  
+    
+    <a class="item" href="/tags">
+      <i class="tags icon" title="All Tags"></i>
+    </a>
+    <a class="item" href="/categories">
+      <i class="cube icon" title="All Categories"></i>
+    </a>
+  </div>
+</section>
 
 
-  </body>
+
+
+
+
+<section class="ui bottom attached center aligned inverted segment">
+
+    
+    <p>© 2019 Ayerfei&#39;s Personal Blog</p>
+    
+    <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
+</section>
+
+
+  </div>
+</div>
+
+      </section>
+      <section class="back">
+        <nav class="ui top secondary menu" style="overflow-x: auto">
+  <div class="item">
+    <i class="inverted big link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+  </div>
+  
+  
+  
+  
+  
+</nav>
+
+<div class="ui centered grid about">
+  <div class="fifteen wide mobile fifteen wide tablet fifteen wide computer column">
+
+    <section class="ui stacked segments">
+      
+      <header class="ui inverted segment">
+      
+        <h2 class="ui header">
+          About
+        </h2>
+      </header>
+
+      
+      <article class="ui inverted segment markdown-body">
+      
+        <div class="ui stackable three column grid">
+          <div class="column">
+              
+          </div>
+          <div class="column">
+              
+          </div>
+          <div class="column">
+              
+          </div>
+        </div>
+      </article>
+
+      
+
+      
+        
+      
+    </section>
+
+  </div>
+</div>
+
+      </section>
+    </div>
+  </div>
+
+  
+<script src="/js/jquery.min.js"></script>
+<script src="/js/semantic.min.js"></script>
+<script src="/js/html2canvas.min.js"></script>
+<script src="/js/bg.js"></script>
+<script src="/js/site.js"></script>
+
+
+
+</body>
+
 </html>
