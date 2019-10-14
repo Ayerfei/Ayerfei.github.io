@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ayerfei&#39;s Personal Blog</title>
-    <link>Ayerfei.github.io/</link>
+    <link>https://ayerfei.github.io/</link>
     <description>Recent content on Ayerfei&#39;s Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 13 Oct 2019 09:25:24 +0800</lastBuildDate>
     
-	<atom:link href="Ayerfei.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ayerfei.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>将hugo部署到Github Pages</title>
-      <link>Ayerfei.github.io/posts/%E5%B0%86hugo%E9%83%A8%E7%BD%B2%E5%88%B0github-pages/</link>
+      <link>https://ayerfei.github.io/posts/%E5%B0%86hugo%E9%83%A8%E7%BD%B2%E5%88%B0github-pages/</link>
       <pubDate>Sun, 13 Oct 2019 09:25:24 +0800</pubDate>
       
-      <guid>Ayerfei.github.io/posts/%E5%B0%86hugo%E9%83%A8%E7%BD%B2%E5%88%B0github-pages/</guid>
+      <guid>https://ayerfei.github.io/posts/%E5%B0%86hugo%E9%83%A8%E7%BD%B2%E5%88%B0github-pages/</guid>
       <description>以下以 win 10 为例
  下载hugo和配置环境变量  https://github.com/gohugoio/hugo/releases
 从以上网址找出属于自己的电脑版本的zip解压
@@ -37,10 +37,10 @@ hugo server -D  在浏览器打开：http://localhost:1313/</description>
     
     <item>
       <title>Valid Parentheses</title>
-      <link>Ayerfei.github.io/posts/valid-parentheses/</link>
+      <link>https://ayerfei.github.io/posts/valid-parentheses/</link>
       <pubDate>Sat, 12 Oct 2019 22:29:56 +0800</pubDate>
       
-      <guid>Ayerfei.github.io/posts/valid-parentheses/</guid>
+      <guid>https://ayerfei.github.io/posts/valid-parentheses/</guid>
       <description>description：
 Given a string containing just the characters &#39;(&#39;, &#39;)&#39;, &#39;{&#39;, &#39;}&#39;, &#39;[&#39; and &#39;]&#39;, determine if the input string is valid.
 An input string is valid if:
